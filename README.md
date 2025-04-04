@@ -17,18 +17,18 @@ A future feature will be to support other forms of diagrams such as relational d
 A supported editor with lsp support would be a nice addition with live preview of the diagram.
 
 # Example
-\# Class
-\## (Person)
+\# Class\n
+\## (Person)\n
 
-\> -name: String
-\> -age: Int
-\> -height: Float
-\> +GetName(): String
-\> +SetName(name: String): void
-\> +GetAge(): Int
-\> +SetAge(age: Int): void
-\> +GetHeight(): Float
-\> +SetHeight(height: Float): void
+\> -name: String\n
+\> -age: Int\n
+\> -height: Float\n
+\> +GetName(): String\n
+\> +SetName(name: String): void\n
+\> +GetAge(): Int\n
+\> +SetAge(age: Int): void\n
+\> +GetHeight(): Float\n
+\> +SetHeight(height: Float): void\n
 
 The software will be built using Python and the framework tkinter for the GUI. Supported platforms should be Windows and Linux. 
 Macos will be added in the future, so keep this in mind during development. Test on a VM for now.
