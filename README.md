@@ -17,8 +17,8 @@ A future feature will be to support other forms of diagrams such as relational d
 A supported editor with lsp support would be a nice addition with live preview of the diagram.
 
 # Example
-\# Class
-\## (Person)
+# Class
+## Person
 
 - -name: String
 - -age: Int
