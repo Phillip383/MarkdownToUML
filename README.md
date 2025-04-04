@@ -17,6 +17,7 @@ A future feature will be to support other forms of diagrams such as relational d
 A supported editor with lsp support would be a nice addition with live preview of the diagram.
 
 # Example
+```
 # Class
 ## Person
 
@@ -29,6 +30,6 @@ A supported editor with lsp support would be a nice addition with live preview o
 - +SetAge(age: Int): void
 - +GetHeight(): Float
 - +SetHeight(height: Float): void
-
+```
 The software will be built using Python and the framework tkinter for the GUI. Supported platforms should be Windows and Linux. 
 Macos will be added in the future, so keep this in mind during development. Test on a VM for now.
