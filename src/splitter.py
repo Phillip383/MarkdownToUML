@@ -1,4 +1,4 @@
-from src.diagrams.umldiagram import UMLDiagram
+from src.diagrams.classdiagram import ClassDiagram
 from src.diagrams.umltype import UMLType
 
 class Splitter():
@@ -13,7 +13,9 @@ class Splitter():
         typ = self.__split_type(file)
         attributes = self.__split_attributes(file)
         methods = self.__split_methods(file)
-        self.__diagrams.append(UMLDiagram(typ=typ, name=name, methods=methods, attributes=attributes))
+        match typ:
+            case UMLType.CLASS:
+                self.__diagrams.append(ClassDiagram(typ=typ, name=name, methods=methods, attributes=attributes))
         return self.__diagrams
 
     def __split_type(self, file):

@@ -114,6 +114,7 @@ controlflow {
 <ref refid="997e7d69-123f-11f0-b0b5-11b08eb0b120"/>
 <ref refid="ce64f625-1240-11f0-8232-11b08eb0b120"/>
 <ref refid="7e2eb7e0-1245-11f0-97fe-11b08eb0b120"/>
+<ref refid="0f7b6e85-1268-11f0-a0ca-11b08eb0b120"/>
 </reflist>
 </ownedType>
 <owningPackage>
@@ -132,6 +133,11 @@ controlflow {
 <ref refid="997e7d69-123f-11f0-b0b5-11b08eb0b120"/>
 <ref refid="ce64f625-1240-11f0-8232-11b08eb0b120"/>
 <ref refid="7e2eb7e0-1245-11f0-97fe-11b08eb0b120"/>
+<ref refid="2ed62ff1-1265-11f0-9937-11b08eb0b120"/>
+<ref refid="3ae572be-1265-11f0-8a9e-11b08eb0b120"/>
+<ref refid="4011aa80-1265-11f0-95b7-11b08eb0b120"/>
+<ref refid="4b163ff1-1265-11f0-8831-11b08eb0b120"/>
+<ref refid="0f7b6e85-1268-11f0-a0ca-11b08eb0b120"/>
 </reflist>
 </packagedElement>
 </UML:Package>
@@ -382,6 +388,12 @@ existing classes or even new classes with specific responsibilities.</val>
 <ref refid="ce6521c7-1240-11f0-b172-11b08eb0b120"/>
 <ref refid="7e2f0b2d-1245-11f0-ba05-11b08eb0b120"/>
 <ref refid="2cca9457-124e-11f0-a6b9-11b08eb0b120"/>
+<ref refid="0f7b9dda-1268-11f0-b14d-11b08eb0b120"/>
+<ref refid="296f77b6-1265-11f0-80c8-11b08eb0b120"/>
+<ref refid="37f9dfa0-1265-11f0-b42a-11b08eb0b120"/>
+<ref refid="3d6e8cc1-1265-11f0-b208-11b08eb0b120"/>
+<ref refid="46d33090-1265-11f0-952e-11b08eb0b120"/>
+<ref refid="5dc03a64-1268-11f0-9296-11b08eb0b120"/>
 </reflist>
 </ownedPresentation>
 </UML:ClassDiagram>
@@ -429,12 +441,22 @@ existing classes or even new classes with specific responsibilities.</val>
 </subject>
 </UML:CommentItem>
 <UML:Class id="753944cb-1184-11f0-9682-834c370c86c6">
+<clientDependency>
+<reflist>
+<ref refid="4b163ff1-1265-11f0-8831-11b08eb0b120"/>
+</reflist>
+</clientDependency>
 <name>
 <val>Generator</val>
 </name>
 <note>
 <val>This class will take the markdown provided to it and generate a UML diagram in an image formate such as jpeg or png.</val>
 </note>
+<ownedOperation>
+<reflist>
+<ref refid="09b03b2a-1264-11f0-8566-11b08eb0b120"/>
+</reflist>
+</ownedOperation>
 <owningPackage>
 <ref refid="f3a82730-71b1-11ec-a409-f47b099bf663"/>
 </owningPackage>
@@ -449,13 +471,13 @@ existing classes or even new classes with specific responsibilities.</val>
 </UML:Class>
 <UML:ClassItem id="75397161-1184-11f0-b911-834c370c86c6">
 <matrix>
-<val>(1.0, 0.0, 0.0, 1.0, 76.84567260742188, 80.66374969482422)</val>
+<val>(1.0, 0.0, 0.0, 1.0, 1240.985927581787, 75.15468573570251)</val>
 </matrix>
 <top-left>
-<val>(-8.573467254638672, 0.0)</val>
+<val>(-118.11009216308594, 0.0)</val>
 </top-left>
 <width>
-<val>329.46337509155273</val>
+<val>439.0</val>
 </width>
 <height>
 <val>193.3204345703125</val>
@@ -468,6 +490,11 @@ existing classes or even new classes with specific responsibilities.</val>
 </subject>
 </UML:ClassItem>
 <UML:Class id="8bcf8748-1184-11f0-bc54-834c370c86c6">
+<clientDependency>
+<reflist>
+<ref refid="2ed62ff1-1265-11f0-9937-11b08eb0b120"/>
+</reflist>
+</clientDependency>
 <name>
 <val>UMLDiagram</val>
 </name>
@@ -501,10 +528,20 @@ existing classes or even new classes with specific responsibilities.</val>
 <ref refid="8bcfb25b-1184-11f0-846f-834c370c86c6"/>
 </reflist>
 </presentation>
+<specialization>
+<reflist>
+<ref refid="64c82211-1268-11f0-933f-11b08eb0b120"/>
+</reflist>
+</specialization>
+<supplierDependency>
+<reflist>
+<ref refid="3ae572be-1265-11f0-8a9e-11b08eb0b120"/>
+</reflist>
+</supplierDependency>
 </UML:Class>
 <UML:ClassItem id="8bcfb25b-1184-11f0-846f-834c370c86c6">
 <matrix>
-<val>(1.0, 0.0, 0.0, 1.0, 461.2547607421875, 80.66374969482422)</val>
+<val>(1.0, 0.0, 0.0, 1.0, 933.530345916748, 719.9208984375)</val>
 </matrix>
 <top-left>
 <val>(0.0, 0.0)</val>
@@ -551,7 +588,7 @@ existing classes or even new classes with specific responsibilities.</val>
 </UML:Class>
 <UML:ClassItem id="a2050a17-1184-11f0-b1a9-834c370c86c6">
 <matrix>
-<val>(1.0, 0.0, 0.0, 1.0, 68.2722053527832, 304.9178466796875)</val>
+<val>(1.0, 0.0, 0.0, 1.0, 137.61380577087402, 46.14562201499939)</val>
 </matrix>
 <top-left>
 <val>(0.0, -1.2283935546875)</val>
@@ -590,7 +627,7 @@ existing classes or even new classes with specific responsibilities.</val>
 </UML:Class>
 <UML:ClassItem id="f3ee2f21-1184-11f0-854c-834c370c86c6">
 <matrix>
-<val>(1.0, 0.0, 0.0, 1.0, 461.2547607421875, 622.1664123535156)</val>
+<val>(1.0, 0.0, 0.0, 1.0, 98.25619697570801, 649.3876037597656)</val>
 </matrix>
 <top-left>
 <val>(0.0, 0.0)</val>
@@ -642,7 +679,7 @@ existing classes or even new classes with specific responsibilities.</val>
 </UML:Class>
 <UML:ClassItem id="40e9f7d7-123f-11f0-b9e1-11b08eb0b120">
 <matrix>
-<val>(1.0, 0.0, 0.0, 1.0, 75.57293319702148, 603.4075317382812)</val>
+<val>(1.0, 0.0, 0.0, 1.0, 137.61380577087402, 329.5503692626953)</val>
 </matrix>
 <top-left>
 <val>(0.0, 0.0)</val>
@@ -673,7 +710,7 @@ existing classes or even new classes with specific responsibilities.</val>
 <ref refid="8bcf8748-1184-11f0-bc54-834c370c86c6"/>
 </class_>
 <name>
-<val>- methods: List(String)</val>
+<val></val>
 </name>
 </UML:Property>
 <UML:Property id="970e19cf-123f-11f0-94ba-11b08eb0b120">
@@ -722,10 +759,16 @@ existing classes or even new classes with specific responsibilities.</val>
 <ref refid="997ea5cf-123f-11f0-a62f-11b08eb0b120"/>
 </reflist>
 </presentation>
+<supplierDependency>
+<reflist>
+<ref refid="2ed62ff1-1265-11f0-9937-11b08eb0b120"/>
+<ref refid="4011aa80-1265-11f0-95b7-11b08eb0b120"/>
+</reflist>
+</supplierDependency>
 </UML:Class>
 <UML:ClassItem id="997ea5cf-123f-11f0-a62f-11b08eb0b120">
 <matrix>
-<val>(1.0, 0.0, 0.0, 1.0, 860.0891723632812, 80.66374969482422)</val>
+<val>(1.0, 0.0, 0.0, 1.0, 1438.4727783203125, 719.9208984375)</val>
 </matrix>
 <top-left>
 <val>(0.0, 0.0)</val>
@@ -762,7 +805,7 @@ existing classes or even new classes with specific responsibilities.</val>
 <ref refid="8bcf8748-1184-11f0-bc54-834c370c86c6"/>
 </class_>
 <name>
-<val>+ get_attributes(): List(String)</val>
+<val></val>
 </name>
 </UML:Operation>
 <UML:Operation id="9b096351-1240-11f0-ab6a-11b08eb0b120">
@@ -770,7 +813,7 @@ existing classes or even new classes with specific responsibilities.</val>
 <ref refid="8bcf8748-1184-11f0-bc54-834c370c86c6"/>
 </class_>
 <name>
-<val>+ get_methods(): List(String)</val>
+<val></val>
 </name>
 </UML:Operation>
 <UML:Operation id="a1e4a6e8-1240-11f0-ab93-11b08eb0b120">
@@ -822,6 +865,12 @@ existing classes or even new classes with specific responsibilities.</val>
 </typeValue>
 </UML:Parameter>
 <UML:Class id="ce64f625-1240-11f0-8232-11b08eb0b120">
+<clientDependency>
+<reflist>
+<ref refid="3ae572be-1265-11f0-8a9e-11b08eb0b120"/>
+<ref refid="4011aa80-1265-11f0-95b7-11b08eb0b120"/>
+</reflist>
+</clientDependency>
 <name>
 <val>Splitter</val>
 </name>
@@ -850,10 +899,15 @@ existing classes or even new classes with specific responsibilities.</val>
 <ref refid="ce6521c7-1240-11f0-b172-11b08eb0b120"/>
 </reflist>
 </presentation>
+<supplierDependency>
+<reflist>
+<ref refid="4b163ff1-1265-11f0-8831-11b08eb0b120"/>
+</reflist>
+</supplierDependency>
 </UML:Class>
 <UML:ClassItem id="ce6521c7-1240-11f0-b172-11b08eb0b120">
 <matrix>
-<val>(1.0, 0.0, 0.0, 1.0, 861.9160766601562, 384.4477233886719)</val>
+<val>(1.0, 0.0, 0.0, 1.0, 1133.3241691589355, 348.7071990966797)</val>
 </matrix>
 <top-left>
 <val>(0.0, 0.0)</val>
@@ -1075,7 +1129,7 @@ existing classes or even new classes with specific responsibilities.</val>
 </UML:Class>
 <UML:ClassItem id="7e2f0b2d-1245-11f0-ba05-11b08eb0b120">
 <matrix>
-<val>(1.0, 0.0, 0.0, 1.0, 860.0891723632812, 622.1664123535156)</val>
+<val>(1.0, 0.0, 0.0, 1.0, 92.38037490844727, 947.7544860839844)</val>
 </matrix>
 <top-left>
 <val>(0.0, 0.0)</val>
@@ -1258,7 +1312,7 @@ existing classes or even new classes with specific responsibilities.</val>
 </UML:Comment>
 <UML:CommentItem id="2cca9457-124e-11f0-a6b9-11b08eb0b120">
 <matrix>
-<val>(1.0, 0.0, 0.0, 1.0, 75.57293319702148, 992.7155151367188)</val>
+<val>(1.0, 0.0, 0.0, 1.0, 110.61187362670898, 1164.9728088378906)</val>
 </matrix>
 <top-left>
 <val>(0.0, 0.0)</val>
@@ -1276,5 +1330,367 @@ existing classes or even new classes with specific responsibilities.</val>
 <ref refid="2cca90b5-124e-11f0-81a6-11b08eb0b120"/>
 </subject>
 </UML:CommentItem>
+<UML:Operation id="09b03b2a-1264-11f0-8566-11b08eb0b120">
+<class_>
+<ref refid="753944cb-1184-11f0-9682-834c370c86c6"/>
+</class_>
+<name>
+<val>generate_image</val>
+</name>
+<ownedParameter>
+<reflist>
+<ref refid="09b175f3-1264-11f0-9f47-11b08eb0b120"/>
+<ref refid="09b24586-1264-11f0-9c8b-11b08eb0b120"/>
+<ref refid="1953a2cf-1264-11f0-bc97-11b08eb0b120"/>
+</reflist>
+</ownedParameter>
+</UML:Operation>
+<UML:Parameter id="09b175f3-1264-11f0-9f47-11b08eb0b120">
+<direction>
+<val>return</val>
+</direction>
+<ownerFormalParam>
+<ref refid="09b03b2a-1264-11f0-8566-11b08eb0b120"/>
+</ownerFormalParam>
+<typeValue>
+<val>image</val>
+</typeValue>
+</UML:Parameter>
+<UML:Parameter id="09b24586-1264-11f0-9c8b-11b08eb0b120">
+<direction>
+<val>in</val>
+</direction>
+<name>
+<val>type</val>
+</name>
+<ownerFormalParam>
+<ref refid="09b03b2a-1264-11f0-8566-11b08eb0b120"/>
+</ownerFormalParam>
+<typeValue>
+<val>ImageType</val>
+</typeValue>
+</UML:Parameter>
+<UML:Parameter id="1953a2cf-1264-11f0-bc97-11b08eb0b120">
+<direction>
+<val>in</val>
+</direction>
+<name>
+<val>splitter</val>
+</name>
+<ownerFormalParam>
+<ref refid="09b03b2a-1264-11f0-8566-11b08eb0b120"/>
+</ownerFormalParam>
+<typeValue>
+<val>Splitter</val>
+</typeValue>
+</UML:Parameter>
+<UML:DependencyItem id="296f77b6-1265-11f0-80c8-11b08eb0b120">
+<diagram>
+<ref refid="585f224c-71b6-11ec-a409-f47b099bf663"/>
+</diagram>
+<horizontal>
+<val>0</val>
+</horizontal>
+<orthogonal>
+<val>0</val>
+</orthogonal>
+<subject>
+<ref refid="2ed62ff1-1265-11f0-9937-11b08eb0b120"/>
+</subject>
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 1309.502685546875, 743.4685363769531)</val>
+</matrix>
+<points>
+<val>[(128.9700927734375, 63.5751953125), (-7.151355743408203, 63.5751953125)]</val>
+</points>
+<head-connection>
+<ref refid="997ea5cf-123f-11f0-a62f-11b08eb0b120"/>
+</head-connection>
+<tail-connection>
+<ref refid="8bcfb25b-1184-11f0-846f-834c370c86c6"/>
+</tail-connection>
+</UML:DependencyItem>
+<UML:Dependency id="2ed62ff1-1265-11f0-9937-11b08eb0b120">
+<client>
+<reflist>
+<ref refid="8bcf8748-1184-11f0-bc54-834c370c86c6"/>
+</reflist>
+</client>
+<owningPackage>
+<ref refid="f3a82730-71b1-11ec-a409-f47b099bf663"/>
+</owningPackage>
+<presentation>
+<reflist>
+<ref refid="296f77b6-1265-11f0-80c8-11b08eb0b120"/>
+</reflist>
+</presentation>
+<supplier>
+<reflist>
+<ref refid="997e7d69-123f-11f0-b0b5-11b08eb0b120"/>
+</reflist>
+</supplier>
+</UML:Dependency>
+<UML:DependencyItem id="37f9dfa0-1265-11f0-b42a-11b08eb0b120">
+<diagram>
+<ref refid="585f224c-71b6-11ec-a409-f47b099bf663"/>
+</diagram>
+<horizontal>
+<val>0</val>
+</horizontal>
+<orthogonal>
+<val>0</val>
+</orthogonal>
+<subject>
+<ref refid="3ae572be-1265-11f0-8a9e-11b08eb0b120"/>
+</subject>
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 1224.6640625, 599.2374572753906)</val>
+</matrix>
+<points>
+<val>[(-40.24365234375, 120.68344116210938), (50.6982421875, -44.82511901855469)]</val>
+</points>
+<head-connection>
+<ref refid="8bcfb25b-1184-11f0-846f-834c370c86c6"/>
+</head-connection>
+<tail-connection>
+<ref refid="ce6521c7-1240-11f0-b172-11b08eb0b120"/>
+</tail-connection>
+</UML:DependencyItem>
+<UML:Dependency id="3ae572be-1265-11f0-8a9e-11b08eb0b120">
+<client>
+<reflist>
+<ref refid="ce64f625-1240-11f0-8232-11b08eb0b120"/>
+</reflist>
+</client>
+<owningPackage>
+<ref refid="f3a82730-71b1-11ec-a409-f47b099bf663"/>
+</owningPackage>
+<presentation>
+<reflist>
+<ref refid="37f9dfa0-1265-11f0-b42a-11b08eb0b120"/>
+</reflist>
+</presentation>
+<supplier>
+<reflist>
+<ref refid="8bcf8748-1184-11f0-bc54-834c370c86c6"/>
+</reflist>
+</supplier>
+</UML:Dependency>
+<UML:DependencyItem id="3d6e8cc1-1265-11f0-b208-11b08eb0b120">
+<diagram>
+<ref refid="585f224c-71b6-11ec-a409-f47b099bf663"/>
+</diagram>
+<horizontal>
+<val>0</val>
+</horizontal>
+<orthogonal>
+<val>0</val>
+</orthogonal>
+<subject>
+<ref refid="4011aa80-1265-11f0-95b7-11b08eb0b120"/>
+</subject>
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 1374.873291015625, 623.2374572753906)</val>
+</matrix>
+<points>
+<val>[(115.61187744140625, 96.68344116210938), (11.639404296875, -68.82511901855469)]</val>
+</points>
+<head-connection>
+<ref refid="997ea5cf-123f-11f0-a62f-11b08eb0b120"/>
+</head-connection>
+<tail-connection>
+<ref refid="ce6521c7-1240-11f0-b172-11b08eb0b120"/>
+</tail-connection>
+</UML:DependencyItem>
+<UML:Dependency id="4011aa80-1265-11f0-95b7-11b08eb0b120">
+<client>
+<reflist>
+<ref refid="ce64f625-1240-11f0-8232-11b08eb0b120"/>
+</reflist>
+</client>
+<owningPackage>
+<ref refid="f3a82730-71b1-11ec-a409-f47b099bf663"/>
+</owningPackage>
+<presentation>
+<reflist>
+<ref refid="3d6e8cc1-1265-11f0-b208-11b08eb0b120"/>
+</reflist>
+</presentation>
+<supplier>
+<reflist>
+<ref refid="997e7d69-123f-11f0-b0b5-11b08eb0b120"/>
+</reflist>
+</supplier>
+</UML:Dependency>
+<UML:DependencyItem id="46d33090-1265-11f0-952e-11b08eb0b120">
+<diagram>
+<ref refid="585f224c-71b6-11ec-a409-f47b099bf663"/>
+</diagram>
+<horizontal>
+<val>0</val>
+</horizontal>
+<orthogonal>
+<val>0</val>
+</orthogonal>
+<subject>
+<ref refid="4b163ff1-1265-11f0-8831-11b08eb0b120"/>
+</subject>
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 917.5028076171875, 347.2374572753906)</val>
+</matrix>
+<points>
+<val>[(340.4801025390625, 1.4697418212890625), (340.4801025390625, -78.76233696937561)]</val>
+</points>
+<head-connection>
+<ref refid="ce6521c7-1240-11f0-b172-11b08eb0b120"/>
+</head-connection>
+<tail-connection>
+<ref refid="75397161-1184-11f0-b911-834c370c86c6"/>
+</tail-connection>
+</UML:DependencyItem>
+<UML:Dependency id="4b163ff1-1265-11f0-8831-11b08eb0b120">
+<client>
+<reflist>
+<ref refid="753944cb-1184-11f0-9682-834c370c86c6"/>
+</reflist>
+</client>
+<owningPackage>
+<ref refid="f3a82730-71b1-11ec-a409-f47b099bf663"/>
+</owningPackage>
+<presentation>
+<reflist>
+<ref refid="46d33090-1265-11f0-952e-11b08eb0b120"/>
+</reflist>
+</presentation>
+<supplier>
+<reflist>
+<ref refid="ce64f625-1240-11f0-8232-11b08eb0b120"/>
+</reflist>
+</supplier>
+</UML:Dependency>
+<UML:Class id="0f7b6e85-1268-11f0-a0ca-11b08eb0b120">
+<generalization>
+<reflist>
+<ref refid="64c82211-1268-11f0-933f-11b08eb0b120"/>
+</reflist>
+</generalization>
+<name>
+<val>ClassDiagram</val>
+</name>
+<ownedAttribute>
+<reflist>
+<ref refid="27f7c1b1-1268-11f0-b906-11b08eb0b120"/>
+<ref refid="2e02732c-1268-11f0-84f5-11b08eb0b120"/>
+</reflist>
+</ownedAttribute>
+<ownedOperation>
+<reflist>
+<ref refid="34e65b52-1268-11f0-afc6-11b08eb0b120"/>
+<ref refid="3b0cbecb-1268-11f0-8ca4-11b08eb0b120"/>
+</reflist>
+</ownedOperation>
+<owningPackage>
+<ref refid="f3a82730-71b1-11ec-a409-f47b099bf663"/>
+</owningPackage>
+<package>
+<ref refid="f3a82730-71b1-11ec-a409-f47b099bf663"/>
+</package>
+<presentation>
+<reflist>
+<ref refid="0f7b9dda-1268-11f0-b14d-11b08eb0b120"/>
+</reflist>
+</presentation>
+</UML:Class>
+<UML:ClassItem id="0f7b9dda-1268-11f0-b14d-11b08eb0b120">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 764.5031852722168, 1008.2179183959961)</val>
+</matrix>
+<top-left>
+<val>(0.0, 0.0)</val>
+</top-left>
+<width>
+<val>368.82098388671875</val>
+</width>
+<height>
+<val>165.28824615478516</val>
+</height>
+<diagram>
+<ref refid="585f224c-71b6-11ec-a409-f47b099bf663"/>
+</diagram>
+<subject>
+<ref refid="0f7b6e85-1268-11f0-a0ca-11b08eb0b120"/>
+</subject>
+</UML:ClassItem>
+<UML:Property id="27f7c1b1-1268-11f0-b906-11b08eb0b120">
+<class_>
+<ref refid="0f7b6e85-1268-11f0-a0ca-11b08eb0b120"/>
+</class_>
+<name>
+<val>- attributes: List(String)</val>
+</name>
+</UML:Property>
+<UML:Property id="2e02732c-1268-11f0-84f5-11b08eb0b120">
+<class_>
+<ref refid="0f7b6e85-1268-11f0-a0ca-11b08eb0b120"/>
+</class_>
+<name>
+<val>- methods: List(String)</val>
+</name>
+</UML:Property>
+<UML:Operation id="34e65b52-1268-11f0-afc6-11b08eb0b120">
+<class_>
+<ref refid="0f7b6e85-1268-11f0-a0ca-11b08eb0b120"/>
+</class_>
+<name>
+<val>+ get_attributes(): List(String)</val>
+</name>
+</UML:Operation>
+<UML:Operation id="3b0cbecb-1268-11f0-8ca4-11b08eb0b120">
+<class_>
+<ref refid="0f7b6e85-1268-11f0-a0ca-11b08eb0b120"/>
+</class_>
+<name>
+<val>+ get_methods(): List(String)</val>
+</name>
+</UML:Operation>
+<UML:GeneralizationItem id="5dc03a64-1268-11f0-9296-11b08eb0b120">
+<diagram>
+<ref refid="585f224c-71b6-11ec-a409-f47b099bf663"/>
+</diagram>
+<horizontal>
+<val>0</val>
+</horizontal>
+<orthogonal>
+<val>0</val>
+</orthogonal>
+<subject>
+<ref refid="64c82211-1268-11f0-933f-11b08eb0b120"/>
+</subject>
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 858.2863159179688, 942.238525390625)</val>
+</matrix>
+<points>
+<val>[(87.78448486328125, 65.9793930053711), (85.786865234375, -28.9971923828125)]</val>
+</points>
+<head-connection>
+<ref refid="0f7b9dda-1268-11f0-b14d-11b08eb0b120"/>
+</head-connection>
+<tail-connection>
+<ref refid="8bcfb25b-1184-11f0-846f-834c370c86c6"/>
+</tail-connection>
+</UML:GeneralizationItem>
+<UML:Generalization id="64c82211-1268-11f0-933f-11b08eb0b120">
+<general>
+<ref refid="8bcf8748-1184-11f0-bc54-834c370c86c6"/>
+</general>
+<presentation>
+<reflist>
+<ref refid="5dc03a64-1268-11f0-9296-11b08eb0b120"/>
+</reflist>
+</presentation>
+<specific>
+<ref refid="0f7b6e85-1268-11f0-a0ca-11b08eb0b120"/>
+</specific>
+</UML:Generalization>
 </model>
 </gaphor>
