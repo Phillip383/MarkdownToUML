@@ -1,5 +1,5 @@
-from src.umldiagram import UMLDiagram
-from src.umltype import UMLType
+from src.diagrams.umldiagram import UMLDiagram
+from src.diagrams.umltype import UMLType
 
 class Splitter():
     def __init__(self):

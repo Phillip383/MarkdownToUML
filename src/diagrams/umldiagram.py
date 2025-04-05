@@ -1,4 +1,4 @@
-from src.umltype import UMLType
+from src.diagrams.umltype import UMLType
 
 
 class UMLDiagram():

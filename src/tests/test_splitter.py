@@ -1,7 +1,7 @@
 import unittest
 from src.splitter import Splitter
-from src.umldiagram import UMLDiagram
-from src.umltype import UMLType
+from src.diagrams.umldiagram import UMLDiagram
+from src.diagrams.umltype import UMLType
 
 class TestSplitter(unittest.TestCase):
     def test_attributes(self):
