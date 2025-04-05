@@ -17,12 +17,16 @@ class Splitter():
         return self.__diagrams
 
     def __split_type(self, file):
-        match file[file.find("## "): file.find("\n")].lower():
+        file = file.strip()
+        typ = file[file.find("# ") + 1:file.find("\n")].lower().strip()
+        match typ:
             case "class":
                 return UMLType.CLASS
 
     def __split_name(self, file):
-        return file[file.find("## "): file.find("\n")]
+        start = file.find("## ")
+        end = file[start:].find("\n")
+        return file[start:start + end].strip("# ")
 
     def __split_attributes(self, file):
         lines = file.split("\n")

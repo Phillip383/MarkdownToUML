@@ -26,6 +26,8 @@ class TestSplitter(unittest.TestCase):
                             ["-name: String", "-age: int", "-height: float"])
             self.assertEqual(diagram.get_methods(),
                             ["+GetName(): String", "+SetName(name: String): void", "+GetAge(): int", "+SetAge(age: int): void", "+GetHeight(): float", "+SetHeight(height: float): void"])
+            self.assertEqual(diagram.get_type(), UMLType.CLASS)
+            self.assertEqual(diagram.get_name(), "Person")
 
 if __name__ == "__main__":
     unittest.main()
