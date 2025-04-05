@@ -13,7 +13,6 @@ class Splitter():
         typ = self.__split_type(file)
         attributes = self.__split_attributes(file)
         methods = self.__split_methods(file)
-        print(attributes)
         self.__diagrams.append(UMLDiagram(typ=typ, name=name, methods=methods, attributes=attributes))
         return self.__diagrams
 
@@ -39,7 +38,8 @@ class Splitter():
         lines = file.split("\n")
         methods = []
         for line in lines:
-            if line.startswith("-") and "()" in line:
-                methods.append(line)
+            line = line.strip()
+            if line.startswith("-") and "(" in line:
+                methods.append(line.replace("- ", ""))
         return methods
 
