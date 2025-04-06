@@ -389,6 +389,7 @@ existing classes or even new classes with specific responsibilities.</val>
 <ref refid="7e2f0b2d-1245-11f0-ba05-11b08eb0b120"/>
 <ref refid="2cca9457-124e-11f0-a6b9-11b08eb0b120"/>
 <ref refid="0f7b9dda-1268-11f0-b14d-11b08eb0b120"/>
+<ref refid="393be41d-1275-11f0-ac28-11b08eb0b120"/>
 <ref refid="296f77b6-1265-11f0-80c8-11b08eb0b120"/>
 <ref refid="37f9dfa0-1265-11f0-b42a-11b08eb0b120"/>
 <ref refid="3d6e8cc1-1265-11f0-b208-11b08eb0b120"/>
@@ -1692,5 +1693,35 @@ existing classes or even new classes with specific responsibilities.</val>
 <ref refid="0f7b6e85-1268-11f0-a0ca-11b08eb0b120"/>
 </specific>
 </UML:Generalization>
+<UML:Comment id="393bdbcb-1275-11f0-939f-11b08eb0b120">
+<body>
+<val>Create a template png image in code with placeholders and scale it to the content being put in...</val>
+</body>
+<presentation>
+<reflist>
+<ref refid="393be41d-1275-11f0-ac28-11b08eb0b120"/>
+</reflist>
+</presentation>
+</UML:Comment>
+<UML:CommentItem id="393be41d-1275-11f0-ac28-11b08eb0b120">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 1184.42041015625, 1032.193487488334)</val>
+</matrix>
+<top-left>
+<val>(0.0, 0.0)</val>
+</top-left>
+<width>
+<val>567.0234171661798</val>
+</width>
+<height>
+<val>82.28295396843919</val>
+</height>
+<diagram>
+<ref refid="585f224c-71b6-11ec-a409-f47b099bf663"/>
+</diagram>
+<subject>
+<ref refid="393bdbcb-1275-11f0-939f-11b08eb0b120"/>
+</subject>
+</UML:CommentItem>
 </model>
 </gaphor>

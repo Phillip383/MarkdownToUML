@@ -16,6 +16,9 @@ Also, inheritance and composition syntax will need to be supported via some kind
 A future feature will be to support other forms of diagrams such as relational database diagrams.
 A supported editor with lsp support would be a nice addition with live preview of the diagram.
 
+The software will be built using Python and the framework tkinter for the GUI. Supported platforms should be Windows and Linux. 
+Macos will be added in the future, so keep this in mind during development. Test on a VM for now.
+
 # Example
 ```
 # Class
@@ -31,5 +34,5 @@ A supported editor with lsp support would be a nice addition with live preview o
 - +GetHeight(): Float
 - +SetHeight(height: Float): void
 ```
-The software will be built using Python and the framework tkinter for the GUI. Supported platforms should be Windows and Linux. 
-Macos will be added in the future, so keep this in mind during development. Test on a VM for now.
+###### Converts to
+![The generated png from the given markdown](test.png)
