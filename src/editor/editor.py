@@ -1,4 +1,5 @@
 import sys
+from screeninfo import get_monitors
 import random
 from PySide6 import QtCore, QtWidgets
 
@@ -27,10 +28,16 @@ class MyWidget(QtWidgets.QWidget):
 
 
 if __name__ == "__main__":
+    height, width = 0, 0
+    for monitor in get_monitors():
+        if monitor.is_primary:
+            height = monitor.height
+            width = monitor.width
+
     app = QtWidgets.QApplication([])
 
     widget = MyWidget()
-    widget.resize(800, 600)
+    widget.resize(width, height)
     widget.show()
 
     sys.exit(app.exec_())
